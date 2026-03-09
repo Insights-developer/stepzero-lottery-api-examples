@@ -1,0 +1,19 @@
+{
+  "name": "stepzero-claude-tools",
+  "version": "1.0.0",
+  "description": "Stepzero lottery data wired as a Claude tool_use tool",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node index.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.36.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
