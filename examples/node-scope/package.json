@@ -1,0 +1,16 @@
+{
+  "name": "stepzero-node-scope",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Stepzero Ask API example demonstrating the scope parameter (draws, days, all_time).",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "start:days": "SCOPE=days ts-node src/index.ts",
+    "start:all": "SCOPE=all_time ts-node src/index.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.0"
+  }
+}
