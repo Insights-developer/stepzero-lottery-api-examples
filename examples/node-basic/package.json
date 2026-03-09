@@ -1,0 +1,14 @@
+{
+  "name": "stepzero-node-basic",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal Node + TypeScript example for calling the Stepzero /api/v1/ask endpoint.",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.0"
+  }
+}
