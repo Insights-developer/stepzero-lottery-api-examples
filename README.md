@@ -5,6 +5,37 @@ This repo contains small, focused examples showing how to use the **Stepzero lot
 Stepzero exposes free, structured lottery data across US jurisdictions: jackpots, draw results, and stats.  
 This repo is the public face for developers and AI builders; the core Stepzero codebase remains private.
 
+## AI Agents: Quick Start
+
+> **Full guide:** [Stepzero for AI Developers and Agents](https://www.lotteryanalytics.app/guides/stepzero-for-ai-developers-and-agents)
+
+**One call to get real lottery data into your agent:**
+
+```http
+GET https://lotteryanalytics.app/api/v1/ask?q=What+is+the+current+Powerball+jackpot%3F
+Accept: application/json
+```
+
+Wire it as a tool (OpenAI / Claude compatible):
+
+```json
+{
+  "name": "stepzero_lottery_ask",
+  "description": "Query live lottery jackpots, draw results, and stats across US jurisdictions.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "question": { "type": "string", "description": "Natural-language lottery question" }
+    },
+    "required": ["question"]
+  }
+}
+```
+
+Implementation: map `question` → `GET /api/v1/ask?q={question}`, return JSON to the model. Done.
+
+See the full guide above for routing logic, system prompt snippets, and framework examples.
+
 ---
 
 ## What is Stepzero?
