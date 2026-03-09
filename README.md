@@ -232,11 +232,13 @@ If the API is unavailable, a polite fallback:
 
 ```text
 .
-├── README.md              # You are here
+├── README.md                  # You are here
 └── examples
-    ├── node-basic         # Simple Node/TS script calling /api/v1/ask
-    ├── llm-tool-calling   # Example wiring Stepzero as an LLM tool
-    └── agent-integration  # Example with an agent framework
+    ├── node-basic              # Simple Node/TS fetch calling /api/v1/ask
+    ├── node-scope              # Scoped queries: jurisdiction + game filters
+    ├── openai-tools            # Stepzero as an OpenAI function/tool (tool-calling API)
+    ├── claude-tools            # Stepzero as a Claude tool_use tool (Anthropic SDK)
+    └── langchain-js            # Stepzero as a LangChain DynamicTool + AgentExecutor
 ```
 
 ---
